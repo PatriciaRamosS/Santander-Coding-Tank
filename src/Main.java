@@ -42,7 +42,10 @@ public class Main {
                 int destino = Integer.parseInt(destinoString);
 
                 // estrutura de condição
-                if (origem == 1 && destino == 2) {
+                if (origem == destino) {
+                    System.out.println(origemValor + " = " + origemValor);
+                    destinosArray[i] = origemValor;
+                } else if (origem == 1 && destino == 2) {
                     System.out.println("Celsius para Kelvin");
                     double kelvin =  formulas.celsiusToKelvin(origemValor);
                     System.out.println(origemValor + "°C = " + kelvin + " K");
